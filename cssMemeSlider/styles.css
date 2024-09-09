@@ -39,18 +39,26 @@ body {
 }
 
 .controls-list {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
   padding: 0 20px;
   list-style: none;
 }
 
-.controls-item {
+input {
+   display: none;
+}
+
+label {
   position: relative;
+  display: inline-block;
   width: 25px;
   height: 25px;
   background-color: #fff;
 }
 
-.controls-item::after {
+label::after {
   position: absolute;
   content: ' ';
   border: 2px solid red;

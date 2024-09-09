@@ -38,11 +38,11 @@ body {
   color: #fff;
 }
 
-.controls-list {
+.controls {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   justify-content: end;
-  padding: 0 20px;
+  padding: 10px 20px;
   list-style: none;
 }
 
@@ -53,18 +53,27 @@ input {
 label {
   position: relative;
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all ease-in .1s;
 }
 
 label::after {
   position: absolute;
   content: ' ';
-  border: 2px solid red;
+  border: 2px solid #95C96D;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  left: 3px;
-  top: 3px;
+  width: 16px;
+  height: 16px;
+  left: -5px;
+  top: -5px;
+}
+
+label:hover,
+#meme1:checked ~ .controls label:nth-of-type(1),
+#meme2:checked ~ .controls label:nth-of-type(2),
+#meme3:checked ~ .controls label:nth-of-type(3),
+#meme4:checked ~ .controls label:nth-of-type(4) {
+  background-color: #95C96D;
 }

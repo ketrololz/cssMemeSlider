@@ -1,12 +1,11 @@
 body {
   background-color: #292929;
-  min-width: 320px;
 }
 
 .container {
-  padding: 60px 40px 0;
+  padding: 5em 3em 0;
   margin: 0 auto;
-  max-width: 1280px;
+  width: 60%;
   height: 100vh;
   background-color: #313131;
 }
@@ -18,7 +17,7 @@ body {
             "a a"
             "b c";
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 90%;
   width: 100%;
 }
 
@@ -28,15 +27,15 @@ body {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 4 / 3;
-  border-radius: 10px;
-  box-shadow: 0 5px 5px #292929;
+  border-radius: 1%;
+  box-shadow: 0 .5em .5em #292929;
 }
 
 .slider-text {
   grid-area: b;
-  padding: 10px 0;
+  padding: 1.2em 0;
   width: 100%;
-  max-height: 120px;
+  max-height: 12em;
   box-shadow: none;
 }
 
@@ -44,13 +43,13 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 1%;
 }
 
 .slide1 {
   z-index: 1;
   opacity: 0;
-  left: -500px;
+  left: -100%;
   background-image: url(../cssMemeSlider/memes/meme1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -59,7 +58,7 @@ body {
 .slide2 {
   z-index: 2;
   opacity: 0;
-  left: -500px;
+  left: -100%;
   background-image: url(../cssMemeSlider/memes/meme2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -68,7 +67,7 @@ body {
 .slide3 {
   z-index: 3;
   opacity: 0;
-  left: -500px;
+  left: -100%;
   background-image: url(../cssMemeSlider/memes/meme3.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -77,7 +76,7 @@ body {
 .slide4 {
   z-index: 4;
   opacity: 0;
-  left: -500px;
+  left: -100%;
   background-image: url(../cssMemeSlider/memes/meme4.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,13 +84,12 @@ body {
 
 .slider-item-text {
   position: absolute;
-  padding: 0 20px;
+  padding: 0 1em;
   display: flex;
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #fff;
   background: none;
-  border-radius: 10px;
 }
 
 .bottom-panel {
@@ -104,9 +102,9 @@ body {
 .controls {
   grid-area: c;
   display: flex;
-  gap: 16px;
+  gap: 1em;
   justify-content: end;
-  padding: 15px 20px;
+  padding: 1.4em 1.6em;
   list-style: none;
 }
 
@@ -117,29 +115,29 @@ input {
 label {
   position: relative;
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: .8em;
+  height: .8em;
   border-radius: 50%;
 }
 
 label::after {
   position: absolute;
   content: ' ';
-  border: 2px solid #95C96D;
+  border: .15em solid #95C96D;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  left: -3px;
-  top: -3px;
+  width: 1.2em;
+  height: 1.2em;
+  left: -40%;
+  top: -40%;
 }
 
 .active-zone {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 1.8em;
+  height: 1.8em;
   opacity: 0.5;
-  left: -8px;
-  top: -8px;
+  left: -.5em;
+  top: -.5em;
 }
 
 .background1 {
@@ -213,16 +211,17 @@ label:hover,
 
 @keyframes slide-in {
   from {
-    left: 900px
+    left: 100%;
   }
   to {
-    left: 0px
+    left: 0;
   }
 }
 
 @media screen and (max-width: 678px) {
   .container {
-    padding: 60px 20px 0;
+    padding: 5em 1em 0;
+    width: 90%;
   }
 
   .slider-container {
@@ -233,7 +232,7 @@ label:hover,
               "c"
               "b";
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 95%;
     width: 100%;
   }
 
@@ -242,7 +241,7 @@ label:hover,
   }
 
   .controls {
-    padding: 15px 10px;
+    padding: 1.4em 1.6em 1em;
     justify-content: center;
   }
 }

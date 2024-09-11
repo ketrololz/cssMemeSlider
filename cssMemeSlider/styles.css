@@ -3,9 +3,9 @@ body {
 }
 
 .container {
-  padding: 5em 3em 0;
+  padding: 5em 1em 0;
   margin: 0 auto;
-  width: 60%;
+  max-width: 40rem;
   height: 100vh;
   background-color: #313131;
 }
@@ -17,8 +17,6 @@ body {
             "a a"
             "b c";
   margin: 0 auto;
-  max-width: 90%;
-  width: 100%;
 }
 
 .slider {
@@ -189,7 +187,7 @@ label:hover,
 #meme2:checked ~ .controls label:nth-of-type(2),
 #meme3:checked ~ .controls label:nth-of-type(3),
 #meme4:checked ~ .controls label:nth-of-type(4) {
-  background-color: #47E9AE;
+  background-color: #81C7AE;
   cursor: pointer;
 }
 
@@ -218,12 +216,8 @@ label:hover,
   }
 }
 
-@media screen and (max-width: 678px) {
-  .container {
-    padding: 5em 1em 0;
-    width: 90%;
-  }
 
+@media screen and (max-width: 678px) {
   .slider-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -232,8 +226,6 @@ label:hover,
               "c"
               "b";
     margin: 0 auto;
-    max-width: 95%;
-    width: 100%;
   }
 
   .slider-item-text {

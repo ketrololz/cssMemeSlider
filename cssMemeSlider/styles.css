@@ -123,7 +123,7 @@ label {
 label::after {
   position: absolute;
   content: ' ';
-  border: .15em solid #95C96D;
+  border: .15em solid #81C7AE;
   border-radius: 50%;
   width: 1.2em;
   height: 1.2em;
@@ -189,7 +189,7 @@ label:hover,
 #meme2:checked ~ .controls label:nth-of-type(2),
 #meme3:checked ~ .controls label:nth-of-type(3),
 #meme4:checked ~ .controls label:nth-of-type(4) {
-  background-color: #95C96D;
+  background-color: #47E9AE;
   cursor: pointer;
 }
 
